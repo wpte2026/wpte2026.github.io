@@ -1,0 +1,97 @@
+WPTE 2026 (affiliated with FLoC 2026 and FSCD 2026 in Lisbon, Portugal)
+
+12th International Workshop on Rewriting Techniques for Program
+Transformations and Evaluation (19 July 2026)
+
+Webpage:     https://wpte2026.github.io/
+Submission:  https://submissions.floc26.org/wpte/
+Deadline:    22 April 2026
+
+---------------------------------------------------------------------------
+The aim of WPTE is to bring together researchers working on
+program transformations, evaluation, and operationally-based
+programming language semantics, using rewriting methods, in order to
+share the techniques and recent developments and to exchange ideas to
+encourage further activation of research in this area.
+
+Topics of Interest
+---------------------------------------------------------------------------
+* Correctness of program transformations, optimizations and translations.
+* Program transformations for proving termination, confluence, and
+  other properties.
+* Correctness of evaluation strategies.
+* Operational semantics of programs, operationally-based program
+  equivalences such as contextual equivalences and bisimulations.
+* Cost-models for arguing about the optimizing power of transformations
+  and the costs of evaluation.
+* Program transformations for verification and theorem proving purposes.
+* Translation, simulation, equivalence of programs with different
+  formalisms, and evaluation strategies.
+* Program transformations for applying rewriting techniques to programs
+  in specific programming languages.
+* Program transformations for program inversions and program synthesis.
+* Program transformation and evaluation for Haskell and rewriting.
+* Rewriting-based transformations for bidirectional programming and
+  reversible computation.
+
+Submission Guidelines
+---------------------------------------------------------------------------
+For the paper submission deadline, a regular paper or extended abstract
+of at most 10 pages is required. WPTE 2026 accepts submissions in three
+categories:
+
+* Regular paper, reporting on completed work that has not yet been
+  formally published and is not under submission for formal publication
+  at another venue (journal, conference, workshop with formal
+  proceedings).
+
+* Work-in-progress extended abstract, reporting on work in progress.
+
+* Presentation-only extended abstract, a short version of a paper
+  currently submitted to or formally published at another venue.
+
+The program committee will select the presentations for the workshop
+based on the submissions. All selected contributions will be included in
+the informal proceedings distributed to the workshop participants. One
+author of each accepted contribution is expected to present it at the
+workshop in person.
+
+Submissions must be prepared in LaTeX using the EPTCS macro package.
+
+All submissions are to be made via:
+
+  https://submissions.floc26.org/wpte/
+
+Post-Proceedings or Journal Special Issue
+---------------------------------------------------------------------------
+For the 2020-2025 editions, papers from WPTE were selected for
+post-submission and eventual publication in JLAMP special issues.
+We will discuss, also based on interest expressed by authors at the
+workshop, whether to arrange a special issue or other formal proceedings
+for regular papers of this year's edition.
+
+Important Dates
+---------------------------------------------------------------------------
+Submission of extended abstracts: 22 April 2026 (AoE)
+Notification of acceptance: 25 May 2026
+Early Registration for the workshop: 1 June 2026
+Final version for informal proceedings: 29 June 2026
+Workshop: 19 July 2026
+Submission to post-proceedings/special issue: autumn 2026 (tbd)
+
+Program Committee
+---------------------------------------------------------------------------
+Martin Avanzini, Inria Sophia Antipolis
+Carsten Fuhs (co-chair), Birkbeck University of London
+Jan-Christoph Kassing, RWTH Aachen University
+Thomas Kœhler, ICube Strasbourg
+Misaki Kojima, Nagoya University
+Rubén Rubio, Universidad Complutense de Madrid
+Traian Şerbănuţă, University of Bucharest
+Germán Vidal, Universitat Politècnica de València
+Janis Voigtländer (co-chair), University of Duisburg-Essen
+
+Contact
+---------------------------------------------------------------------------
+Please direct questions to: c.fuhs AT bbk.ac.uk and janis.voigtlaender AT uni-due.de
+
