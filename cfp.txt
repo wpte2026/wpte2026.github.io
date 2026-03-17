@@ -73,7 +73,7 @@ selected from this year's edition.
 
 Important Dates
 ---------------------------------------------------------------------------
-Submission of extended abstracts: 22 April 2026 (AoE)
+Submission of regular papers and extended abstracts: 22 April 2026 (AoE)
 Notification of acceptance: 25 May 2026
 Early Registration for the workshop: 1 June 2026
 Final version for informal proceedings: 29 June 2026
