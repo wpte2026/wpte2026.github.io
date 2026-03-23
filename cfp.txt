@@ -85,7 +85,7 @@ Program Committee
 Martin Avanzini, Inria Sophia Antipolis
 Carsten Fuhs (co-chair), Birkbeck University of London
 Jan-Christoph Kassing, RWTH Aachen University
-Thomas Kœhler, ICube Strasbourg
+Thomas Kœhler, ICube Lab, CNRS, Université de Strasbourg
 Misaki Kojima, Nagoya University
 Rubén Rubio, Universidad Complutense de Madrid
 Traian Şerbănuţă, University of Bucharest
