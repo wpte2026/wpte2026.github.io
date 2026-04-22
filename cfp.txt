@@ -1,3 +1,6 @@
+===========================================================================
+2ND CFP UPDATE: Invited Speakers, Deadline Extension to 29 April 2026 (AoE)
+===========================================================================
 WPTE 2026 (affiliated with FLoC 2026 and FSCD 2026 in Lisbon, Portugal)
 
 12th International Workshop on Rewriting Techniques for Program
@@ -5,7 +8,7 @@ Transformations and Evaluation (19 July 2026)
 
 Webpage:     https://wpte2026.github.io/
 Submission:  https://submissions.floc26.org/wpte/
-Deadline:    22 April 2026
+Deadline:    29 April 2026 (Anywhere on Earth) *EXTENDED*
 
 ---------------------------------------------------------------------------
 The aim of WPTE is to bring together researchers working on
@@ -71,9 +74,14 @@ workshop, whether to arrange a special issue or other formal proceedings
 for regular papers and completed work-in-progress extended abstracts
 selected from this year's edition.
 
+Invited Speakers
+---------------------------------------------------------------------------
+Nada Amin, Harvard University
+Nikos Tzevelekos, Queen Mary University of London (joint with GALOP 2026)
+
 Important Dates
 ---------------------------------------------------------------------------
-Submission of regular papers and extended abstracts: 22 April 2026 (AoE)
+Submission of regular papers and extended abstracts: *29* April 2026 (AoE)
 Notification of acceptance: 25 May 2026
 Early Registration for the workshop: 1 June 2026
 Final version for informal proceedings: 29 June 2026
