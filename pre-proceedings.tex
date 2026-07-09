@@ -1,0 +1,127 @@
+% need to use LuaLaTeX
+
+% pre-proceedings with TOC including authors, odd-page starts, numbered blanks, parameterized names and authors
+
+% -----------------------------------------------------------------------------
+% Uses newpax (v0.55+) to extract and reinsert all PDF annotations,
+% preserving internal hyperlinks and bookmarks from each sub-PDF.
+% -----------------------------------------------------------------------------
+
+\RequirePackage{pdfmanagement-testphase}
+\DocumentMetadata{uncompress}
+
+\documentclass[a4paper,11pt]{article}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{hyperref}
+\usepackage{pdfpages}
+\usepackage{newpax}
+\usepackage{pgffor}
+
+% --- Extract annotations into .newpax files --------------------------
+\directlua{
+  require("newpax")
+  newpax.writenewpax("An Interactive Proof Mode for Dafny Based on Back Translation of Verification Obligations")
+  newpax.writenewpax("Improvement Theory for Probabilistic Call-by-Need")
+  newpax.writenewpax("A Cyclic Proof System for Trace Formula Implication with Least and Greatest Fixpoints")
+  newpax.writenewpax("On Comparing Python Programs Based on Differences in Rewrite Sequences to Support Grading Programming Exercises")
+  newpax.writenewpax("Tactic-driven code fusion")
+}
+
+% Plain page style for content pages
+\pagestyle{plain}
+
+% Ensure each paper starts on an odd page, with blank pages numbered
+\newcommand{\startPaper}{%
+  \clearpage%
+  \ifodd\value{page}\else%
+  \thispagestyle{plain}\null\clearpage%
+  \fi%
+}
+
+% Paper entries: title and author (comma-separated)
+\def\PaperList{%
+  An Interactive Proof Mode for Dafny Based on Back Translation of Verification Obligations/{Ștefan Ciobâcă, K.\ Rustan M.\ Leino, Ștefan-Alexandru Mercas and Roxana-Mihaela Timon},%
+  Improvement Theory for Probabilistic Call-by-Need/{David Sabel and Manfred Schmidt-Schauß},%
+  A Cyclic Proof System for Trace Formula Implication with Least and Greatest Fixpoints/{Takumi Sato and Koji Nakazawa},%
+  On Comparing Python Programs Based on Differences in Rewrite Sequences to Support Grading Programming Exercises/{Misaki Kojima and Naoki Nishida},%
+  Tactic-driven code fusion/{Katarzyna Marek and Clément Pit Claudel}%
+}
+
+\begin{document}
+
+\begin{titlepage}
+\centering
+{\LARGE \textbf{Informal Proceedings of the 12th International Workshop on Rewriting Techniques for Program Transformations and Evaluation (WPTE~2026)}\par}
+\vspace{1cm}
+{\Large Lisbon, Portugal, July 19, 2026\par}
+
+\vfill
+
+\section*{Preface}
+
+The 12th International Workshop on Rewriting Techniques for Program Transformations and Evaluation (WPTE~2026) was held on July 19, 2026, in Lisbon, Portugal, as part of FSCD~2026.
+WPTE brings together researchers working on program transformations, evaluation, and operationally based programming language semantics, using rewriting methods.
+This volume collects the extended abstracts of the contributions accepted for presentation.
+We thank all authors for their submissions and the program committee and reviewers for their feedback.
+We hope the contributions will foster further research and collaboration in the rewriting community.
+
+\vfill
+\vfill
+
+\section*{Invited Talks}
+
+\begin{itemize}
+\item
+  \textbf{Staging for Synthesis and Analysis}\\
+  \protect\hspace{1.5em}
+  by {\itshape Nada Amin}
+\item
+  \textbf{Fully Abstract Normal Form Bisimulation for Call-by-Value PCF}\\
+  \protect\hspace{1.5em}
+  by {\itshape Nikos Tzevelekos}
+\end{itemize}
+
+\vfill
+
+\section*{Program Committee}
+
+\begin{itemize}
+\item Martin Avanzini, Inria Sophia Antipolis
+\item Carsten Fuhs (co-chair), Birkbeck, University of London
+\item Jan-Christoph Kassing, RWTH Aachen University
+\item Thomas Kœhler, ICube Lab, CNRS, Université de Strasbourg
+\item Misaki Kojima, Nagoya University
+\item Rubén Rubio, Universidad Complutense de Madrid
+\item Traian Şerbănuţă, University of Bucharest
+\item Germán Vidal, Universitat Politècnica de València
+\item Janis Voigtl\"ander (co-chair), University of Duisburg-Essen
+\end{itemize}
+
+\vfill
+\end{titlepage}
+
+
+\cleardoublepage
+
+% Table of Contents in roman numerals
+\pagenumbering{roman}
+\tableofcontents
+
+\cleardoublepage
+
+% Main content in arabic page numbers
+\pagenumbering{arabic}
+
+% Loop over papers
+\foreach \Title/\Author in \PaperList {%
+  \startPaper
+  \phantomsection
+  \addcontentsline{toc}{section}{\Title}%
+  \addtocontents{toc}{\protect\hspace{1.5em}{\small\itshape\Author}\protect\par}%
+  \includepdf[
+    pages=-,
+    pagecommand={\thispagestyle{plain}}
+  ]{\Title.pdf}%
+}
+
+\end{document}
