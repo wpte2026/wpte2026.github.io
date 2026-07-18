@@ -1,0 +1,78 @@
+\documentclass[11pt]{beamer}
+\usepackage[utf8]{inputenc}
+\usetheme{default}
+\setbeamertemplate{navigation symbols}{}
+
+% Increase base font sizes
+\setbeamerfont{frametitle}{size=\Large}
+\setbeamerfont{normal text}{size=\large}
+\setbeamerfont{itemize/enumerate body}{size=\large}
+\setbeamerfont{itemize/enumerate subbody}{size=\large}
+
+% Make footline inherit frametitle’s font size
+\setbeamerfont{footline}{parent=frametitle}
+
+% Macro to hold the “Break/End” footer text
+\newcommand{\sessionbreaktext}{}
+
+% Redefine the footline to use that text centered at the bottom
+\setbeamertemplate{footline}{%
+  \begin{beamercolorbox}[wd=\paperwidth,ht=2.5ex,dp=1ex,center]{author in head/foot}%
+    \usebeamerfont{footline}\sessionbreaktext%
+  \end{beamercolorbox}%
+}
+
+% sessionframe takes two args: (1) the frame title, (2) the break/end text
+\newenvironment{sessionframe}[2]{%
+  \renewcommand{\sessionbreaktext}{#2}%
+  \begin{frame}[t]{#1}%
+}{%
+  \end{frame}%
+}
+
+\begin{document}
+
+\begin{sessionframe}{WPTE --- Session 1 (09:00--10:00)}{Break: 10:00--10:30 (coffee)}
+  \vspace*{\fill}
+  \begin{itemize}
+    \item \underline{\textbf{Invited talk:}}\\[1ex]
+      \textbf{Staging for Synthesis and Analysis}\\
+      by \mbox{Nada Amin}
+  \end{itemize}
+\end{sessionframe}
+
+\begin{sessionframe}{WPTE --- Session 2 (10:30--12:00)}{Break: 12:00--14:30 (lunch until 14:00)}
+  \vspace*{\fill}
+  \begin{itemize}
+    \item \textbf{An Interactive Proof Mode for Dafny Based on Back Translation of Verification Obligations}\\
+      by \mbox{\underline{Ștefan Ciobâcă}}, \mbox{K. Rustan M. Leino}, \mbox{Ștefan-Alexandru Mercas} and \mbox{Roxana-Mihaela Timon}
+    \vspace*{\fill}
+    \item \textbf{Improvement Theory for Probabilistic Call-by-Need}\\
+      by \mbox{\underline{David Sabel}} and \mbox{Manfred Schmidt-Schauß}
+    \vspace*{\fill}
+    \item \textbf{A Cyclic Proof System for Trace Formula Implication with Least and Greatest Fixpoints}\\
+      by \mbox{\underline{Takumi Sato}} and \mbox{Koji Nakazawa}
+  \end{itemize}
+\end{sessionframe}
+
+\begin{sessionframe}{WPTE --- Session 3 (14:30--15:30)}{Break: 15:30--16:00 (coffee)}
+  \vspace*{\fill}
+  \begin{itemize}
+    \item \underline{\textbf{Invited talk (joint with GaLoP):}}\\[1ex]
+      \textbf{Fully Abstract Normal Form Bisimulation for Call-by-Value PCF}\\
+      by \mbox{Nikos Tzevelekos}
+  \end{itemize}
+\end{sessionframe}
+
+\begin{sessionframe}{WPTE --- Session 4 (16:00--17:00)}{Business meeting: 17:00--17:30}
+  \vspace*{\fill}
+  \begin{itemize}
+    \item \textbf{On Comparing Python Programs Based on Differences in Rewrite Sequences to Support Grading Programming Exercises}\\
+      by \mbox{Misaki Kojima} and \mbox{\underline{Naoki Nishida}}
+    \vspace*{\fill}
+    \item \textbf{Tactic-driven code fusion}\\
+      by \mbox{\underline{Katarzyna Marek}} and \mbox{Clément Pit Claudel}
+  \end{itemize}
+\end{sessionframe}
+
+\end{document}
